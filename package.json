@@ -1,0 +1,22 @@
+{
+  "name": "web-page-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustin1818/web-page-blog.git"
+  },
+  "author": "Dustin Clyde C. Amoda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dustin1818/web-page-blog/issues"
+  },
+  "homepage": "https://github.com/dustin1818/web-page-blog#readme",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
