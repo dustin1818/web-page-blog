@@ -1,0 +1,263 @@
+html{
+    margin: 0%;
+    width: 100%;
+    font-family:Courier new;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    top:0;
+    right: 0;
+}
+.pic-blog h2{
+    font-family:Courier new;
+    margin-top: -10px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.blog-main{
+   background:url(../img/pic2.jpg)no-repeat center center fixed;
+   height: 100vh;
+   background-size: cover;
+   text-align: center;
+   color: white;
+   position: sticky;
+}
+
+.blog-main ul{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 2.8rem;
+    padding:20px 0px 50px;
+}
+
+.blog-main ul li{
+    list-style: none;
+    width: 20%;  
+}
+
+.blog-main  .menu-item a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+
+#about p{
+    font-size: 20px;
+}
+
+.about-blog{
+    font-family:Courier new;
+    margin-top: -10px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* for image slide*/
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 100%;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+.feedback-blog{
+    font-family:Courier new;
+    margin-top: -10px;
+    font-size: 40px;
+    margin-bottom: -50px;
+}
+
+
+
+  .portfolio-form h2{
+    text-decoration: underline;
+}
+.form-label{
+    padding: 10px 0px;
+    font-size: 1.3 rem;
+}
+
+.form-input input{
+    width: 50%;
+    padding: 7px 0px;
+    border-radius: 8px;
+}
+
+.form-input input:focus{
+    transition: .7s;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25)
+}
+.form-input-textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    width: 50%;
+    padding: 7px 0px;
+    height: 200px;
+}
+.form-input-textarea:focus{
+        transition: .7s;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255,.25)
+}
+
+
+.form-submit{
+    margin-top: 5px;
+    text-align: center ;
+}
+
+.btn-submit{
+    padding: 5px 25px;
+    text-decoration: none;
+    margin-top: -40px;
+    color: white;
+    background-color: darkolivegreen;
+    border-radius: 50px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 50px;
+    background:url(../img/pic1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 40px;
+    
+}
+@media only screen and (max-width:1024px){
+        .blog-menu ul li{
+      font-size:30px;
+      padding-right:80px;
+      background:url(../img/pic2.jpg)no-repeat center center fixed;
+    }
+}
+@media only screen and (max-width:768px){
+        .blog-menu ul li{
+      font-size:30px;
+      padding-right:80px;
+      background:url(../img/pic2.jpg)no-repeat center center fixed;
+    }
+}
+
+@media only screen and (max-width:425px){
+        .blog-menu ul li{
+      background:url(../img/pic2.jpg)no-repeat center center fixed;
+      font-size:15px;
+      padding-right:80px;
+      background-size:cover;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .blog-main{
+      width:100%;
+       display:block;
+       background:url(../img/pic2.jpg)no-repeat center center fixed;
+       background-size:cover;
+    }
+
+    .blog-menu ul li{
+      font-size:10px;
+      padding-right:20px;
+    }
+
+}
