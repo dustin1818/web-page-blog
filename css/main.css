@@ -227,20 +227,17 @@ footer{
         .blog-menu ul li{
       font-size:30px;
       padding-right:80px;
-      background:url(../img/pic2.jpg)no-repeat center center fixed;
     }
 }
 @media only screen and (max-width:768px){
         .blog-menu ul li{
       font-size:30px;
       padding-right:80px;
-      background:url(../img/pic2.jpg)no-repeat center center fixed;
     }
 }
 
 @media only screen and (max-width:425px){
         .blog-menu ul li{
-      background:url(../img/pic2.jpg)no-repeat center center fixed;
       font-size:15px;
       padding-right:80px;
       background-size:cover;
