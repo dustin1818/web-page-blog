@@ -1,30 +1,43 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 0;
+showSlides();
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";  
   }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+var slideIndex2 = 0;
+showSlides2();
+
+function showSlides2() {
+  var j;
+  var slides2 = document.getElementsByClassName("mySlides2");
+  var dots2 = document.getElementsByClassName("dot2");
+
+  for (j = 0; j < slides2.length; j++) {
+    slides2[j].style.display = "none";  
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides2.length) {slideIndex2 = 1}    
+  for (j = 0; j < dots2.length; j++) {
+    dots2[j].className = dots2[j].className.replace(" active", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";  
+  dots2[slideIndex2-1].className += " active";
+  setTimeout(showSlides2, 2000); // Change image every 2 seconds
+}
 
   function appendMailTo(){
     let message = document.getElementById("mailMessage").value;
@@ -40,4 +53,3 @@ function showSlides(n) {
     let yearPos = document.getElementById("getYear");
     let currYear = date.getFullYear();
     yearPos.innerHTML = currYear;
-}
